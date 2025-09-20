@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Estadísticas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Estadísticas del Jugador</h1>
+    <p><strong>Alias:</strong> <span id="alias"></span></p>
+    <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+    <p><strong>Grupo:</strong> <span id="grupo"></span></p>
+    <p><strong>Puntos:</strong> <span id="puntos"></span></p>
+
+    <a href="index.html" class="btn">Volver al inicio</a>
+  </div>
+
+  <script>
+    document.getElementById("alias").textContent = localStorage.getItem("alias") || '';
+document.getElementById("nombre").textContent = localStorage.getItem("nombre") || '';
+document.getElementById("grupo").textContent = localStorage.getItem("grupo") || '';
+document.getElementById("puntos").textContent = localStorage.getItem("puntos") || '';
+  </script>
+</body>
+</html
